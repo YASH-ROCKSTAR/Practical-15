@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    overflow: hidden;
+    max-width: 100%;
+}
+.header{
+    background-color: lightgrey;
+    padding: 20px 40px;
+    border: 1px solid lightgray ;
+}
+.header h2{
+    margin: 0;
+    text-align: center;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-making{
+    margin-bottom: 10px;
+    padding-bottom:10px ;
+    position: relative;
+}
+.form-making label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-making input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-making input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-making i{
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+    right: 10px;
+}
+.form-making small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
+button{
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+}
+.form-making.success input{
+    border-color: greenyellow;
+}
+.form-making.error input{
+    border-color: red;
+}
+.form-making.success i.fa-check-circle{
+    visibility: visible;
+    color: greenyellow;
+}
+.form-making.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+.form-making.error small{
+    visibility: visible;
+    color: red;
+}
+
